@@ -1,10 +1,12 @@
 # Implement a class to hold room information. This should have name and
 # description attributes.
+from player import Player
+
 
 class Room:
-    def __init__(self, desc1, desc2):
-        self.desc1 = desc1
-        self.desc2 = desc2
+    def __init__(self, name, description):
+        self.name = name
+        self.description = description
 
     def __str__(self):
-        return f"{self.desc1}: {self.desc2}"
+        return f"{self.name}, {self.description} \n"
